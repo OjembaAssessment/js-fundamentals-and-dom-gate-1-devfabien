@@ -24,8 +24,10 @@ btns.forEach(function(btn){
             }
             document.getElementById("num").innerHTML = vvalue;
             start.textContent="stop";
+            start.style.backgroundColor="gray";
             if(vvalue==0){
-                start.textContent="start"
+                start.textContent="start";
+                start.style.backgroundColor="rgb(171, 250, 181)";
             }
             vvalue--;
         }, 1000);
