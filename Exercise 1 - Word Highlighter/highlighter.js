@@ -9,15 +9,14 @@ let splitted=para.split(' ');
   }
  let vvalue= (Object.values(wordMap).sort((a, b)=>b - a)).slice(0,5);
  let kkeys= Object.keys(wordMap).sort((a, b)=>wordMap[b] - wordMap[a]).slice(0,5);
-var kk=[...kkeys];
-console.log(kk);
-var g=kk[0].toString();
-for(let i=0;i<kk.length;i++){
+for(let i=0;i<kkeys.length;i++){
 let span=document.createElement('span');
-span.append(kk[i]);
-span.setAttribute('style',"background-color:yellow");
+span.append(kkeys[i]);
+span.setAttribute('style',"background-color:yellow;margin:6px;padding:3px");
 console.log(span)
+document.body.insertAdjacentElement('afterbegin',span);
 }
+
 
 
 
